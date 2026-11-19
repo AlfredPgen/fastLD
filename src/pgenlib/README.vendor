@@ -1,0 +1,5 @@
+pgenlib (PLINK 2.0 genotype file library), vendored from https://github.com/chrchang/plink-ng
+(master branch, downloaded 2026-11-19; PLINK2_BASE_VERNUM 906). Files: 2.0/include/pgenlib_read,
+pgenlib_misc, plink2_base, plink2_bits, plink2_simd (.h/.cc), unmodified.
+License: GNU LGPL v3 or later (COPYING.LESSER), which refers to the GNU GPL v3 (COPYING).
+Copyright (C) 2013-2025 Christopher Chang.

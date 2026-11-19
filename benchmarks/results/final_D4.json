@@ -1,0 +1,110 @@
+{
+ "cpu": "Intel(R) Xeon(R) Processor @ 2.10GHz",
+ "master": "/work/bd/D4.master",
+ "threads": 1,
+ "mode": "text",
+ "runs": 3,
+ "date": "2026-11-19 13:28:55",
+ "results": {
+  "baseline": {
+   "wall": {
+    "mean": 12.352038893333125,
+    "sd": 0.7224979344739668
+   },
+   "parse": {
+    "mean": 3.388802,
+    "sd": 0.35682419624235123
+   },
+   "corr": {
+    "mean": 8.302557666666667,
+    "sd": 0.35057346988945554
+   },
+   "write": {
+    "mean": 0.6268963333333334,
+    "sd": 0.03913386422694974
+   },
+   "rss_mb_max": 723.44921875,
+   "path": "floating point (BLAS dsyrk)",
+   "raw": {
+    "wall": [
+     13.184892802999912,
+     11.977671885999825,
+     11.89355199099964
+    ],
+    "parse": [
+     3.777494,
+     3.31283,
+     3.076082
+    ],
+    "corr": [
+     8.70094,
+     8.041154,
+     8.165579
+    ],
+    "write": [
+     0.669703,
+     0.592957,
+     0.618029
+    ],
+    "rss_mb": [
+     723.44921875,
+     723.44921875,
+     723.44921875
+    ],
+    "path": "floating point (BLAS dsyrk)",
+    "cmd": "/work/bin/ldstore-fast-baseline --in-files /work/bd/D4.master --write-text --read-only-bgen --n-threads 1",
+    "env": {}
+   }
+  },
+  "final": {
+   "wall": {
+    "mean": 10.801498575333275,
+    "sd": 0.34728511448882465
+   },
+   "parse": {
+    "mean": 2.085561,
+    "sd": 0.12510866459602224
+   },
+   "corr": {
+    "mean": 8.067235,
+    "sd": 0.20575726452059998
+   },
+   "write": {
+    "mean": 0.6240693333333334,
+    "sd": 0.019680083849753623
+   },
+   "rss_mb_max": 723.3203125,
+   "path": "floating point (BLAS dsyrk)",
+   "raw": {
+    "wall": [
+     11.134400942999946,
+     10.441426728999886,
+     10.82866805399999
+    ],
+    "parse": [
+     2.202012,
+     1.953298,
+     2.101373
+    ],
+    "corr": [
+     8.261074,
+     7.851337,
+     8.089294
+    ],
+    "write": [
+     0.646783,
+     0.613323,
+     0.612102
+    ],
+    "rss_mb": [
+     723.30859375,
+     723.3203125,
+     723.3203125
+    ],
+    "path": "floating point (BLAS dsyrk)",
+    "cmd": "/work/bin/ldstore-fast-static-final --in-files /work/bd/D4.master --write-text --read-only-bgen --n-threads 1",
+    "env": {}
+   }
+  }
+ }
+}

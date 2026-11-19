@@ -1,0 +1,60 @@
+{
+ "cpu": "Intel(R) Xeon(R) Processor @ 2.10GHz",
+ "master": "/work/bd/D2.master",
+ "threads": 1,
+ "mode": "text",
+ "runs": 3,
+ "date": "2026-11-19 11:17:21",
+ "results": {
+  "baseline": {
+   "wall": {
+    "mean": 11.054872236000014,
+    "sd": 1.283399511811533
+   },
+   "parse": {
+    "mean": 1.4063516666666667,
+    "sd": 1.079335856388239
+   },
+   "corr": {
+    "mean": 9.036463,
+    "sd": 0.05369597468153405
+   },
+   "write": {
+    "mean": 0.46352899999999997,
+    "sd": 0.06342198107123427
+   },
+   "rss_mb_max": 510.47265625,
+   "path": "exact integer (AVX-512 VNNI)",
+   "raw": {
+    "wall": [
+     12.536019144999955,
+     10.272260913000082,
+     10.356336650000003
+    ],
+    "parse": [
+     2.652541,
+     0.768257,
+     0.798257
+    ],
+    "corr": [
+     9.09761,
+     8.996999,
+     9.01478
+    ],
+    "write": [
+     0.39442,
+     0.4771,
+     0.519067
+    ],
+    "rss_mb": [
+     510.46875,
+     510.46875,
+     510.47265625
+    ],
+    "path": "exact integer (AVX-512 VNNI)",
+    "cmd": "/work/bin/ldstore-fast-baseline --in-files /work/bd/D2.master --write-text --read-only-bgen --n-threads 1",
+    "env": {}
+   }
+  }
+ }
+}

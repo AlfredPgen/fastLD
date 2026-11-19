@@ -1,0 +1,110 @@
+{
+ "cpu": "Intel(R) Xeon(R) Processor @ 2.10GHz",
+ "master": "/work/bd/D2.master",
+ "threads": 4,
+ "mode": "text",
+ "runs": 3,
+ "date": "2026-11-19 13:30:26",
+ "results": {
+  "baseline": {
+   "wall": {
+    "mean": 3.1742698046665887,
+    "sd": 0.09931624552508603
+   },
+   "parse": {
+    "mean": 0.37936133333333333,
+    "sd": 0.07637891238642595
+   },
+   "corr": {
+    "mean": 2.4201656666666667,
+    "sd": 0.07274110063322749
+   },
+   "write": {
+    "mean": 0.339496,
+    "sd": 0.0348020650393048
+   },
+   "rss_mb_max": 511.34765625,
+   "path": "exact integer (AVX-512 VNNI)",
+   "raw": {
+    "wall": [
+     3.0656636160001653,
+     3.260467074999724,
+     3.196678722999877
+    ],
+    "parse": [
+     0.317216,
+     0.356238,
+     0.46463
+    ],
+    "corr": [
+     2.393555,
+     2.502465,
+     2.364477
+    ],
+    "write": [
+     0.328621,
+     0.378437,
+     0.31143
+    ],
+    "rss_mb": [
+     511.22265625,
+     511.22265625,
+     511.34765625
+    ],
+    "path": "exact integer (AVX-512 VNNI)",
+    "cmd": "/work/bin/ldstore-fast-baseline --in-files /work/bd/D2.master --write-text --read-only-bgen --n-threads 4",
+    "env": {}
+   }
+  },
+  "final": {
+   "wall": {
+    "mean": 1.8408792516667443,
+    "sd": 0.02319317587557938
+   },
+   "parse": {
+    "mean": 0.5062816666666666,
+    "sd": 0.024844699884146993
+   },
+   "corr": {
+    "mean": 0.9613606666666666,
+    "sd": 0.02127548181201393
+   },
+   "write": {
+    "mean": 0.3482056666666667,
+    "sd": 0.051973131831104157
+   },
+   "rss_mb_max": 384.5546875,
+   "path": "exact integer (AVX-512 VNNI), 2657 dense + 1343 sparse SNPs",
+   "raw": {
+    "wall": [
+     1.8166829930000858,
+     1.8629186690000097,
+     1.843036093000137
+    ],
+    "parse": [
+     0.531018,
+     0.506497,
+     0.48133
+    ],
+    "corr": [
+     0.967373,
+     0.978983,
+     0.937726
+    ],
+    "write": [
+     0.295816,
+     0.349049,
+     0.399752
+    ],
+    "rss_mb": [
+     384.5546875,
+     376.3671875,
+     383.50390625
+    ],
+    "path": "exact integer (AVX-512 VNNI), 2657 dense + 1343 sparse SNPs",
+    "cmd": "/work/bin/ldstore-fast-static-final --in-files /work/bd/D2.master --write-text --read-only-bgen --n-threads 4",
+    "env": {}
+   }
+  }
+ }
+}

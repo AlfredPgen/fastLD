@@ -1,0 +1,60 @@
+{
+ "cpu": "Intel(R) Xeon(R) Processor @ 2.10GHz",
+ "master": "/work/bd/D4.master",
+ "threads": 1,
+ "mode": "text",
+ "runs": 3,
+ "date": "2026-11-19 11:19:10",
+ "results": {
+  "baseline": {
+   "wall": {
+    "mean": 11.736803173666734,
+    "sd": 0.07234386467903649
+   },
+   "parse": {
+    "mean": 3.122359,
+    "sd": 0.01937182059074466
+   },
+   "corr": {
+    "mean": 8.06018,
+    "sd": 0.059164022885534094
+   },
+   "write": {
+    "mean": 0.5250533333333334,
+    "sd": 0.14568484193399578
+   },
+   "rss_mb_max": 723.44921875,
+   "path": "floating point (BLAS dsyrk)",
+   "raw": {
+    "wall": [
+     11.674609537999913,
+     11.719603009000139,
+     11.81619697400015
+    ],
+    "parse": [
+     3.140818,
+     3.124071,
+     3.102188
+    ],
+    "corr": [
+     8.12481,
+     8.047038,
+     8.008692
+    ],
+    "write": [
+     0.383034,
+     0.51798,
+     0.674146
+    ],
+    "rss_mb": [
+     723.44921875,
+     723.44921875,
+     723.28515625
+    ],
+    "path": "floating point (BLAS dsyrk)",
+    "cmd": "/work/bin/ldstore-fast-baseline --in-files /work/bd/D4.master --write-text --read-only-bgen --n-threads 1",
+    "env": {}
+   }
+  }
+ }
+}

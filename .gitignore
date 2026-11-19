@@ -1,0 +1,6 @@
+/fastLD
+/fastLD-asan
+/fastLD-reference
+/fastLD_linux_x86_64*
+*.o
+__pycache__/

@@ -1,0 +1,39 @@
+name: build
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install dependencies
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y g++ make libopenblas-dev libdeflate-dev libzstd-dev libsqlite3-dev libgfortran-13-dev python3-numpy python3-scipy
+      - name: Build static binary
+        run: |
+          make static
+          ./fastLD --version
+          cp fastLD fastLD_linux_x86_64
+          sha256sum fastLD_linux_x86_64 > fastLD_linux_x86_64.sha256
+      - uses: actions/upload-artifact@v4
+        with:
+          name: fastLD_linux_x86_64
+          path: |
+            fastLD_linux_x86_64
+            fastLD_linux_x86_64.sha256
+      - name: Self-contained tests
+        run: make test
+      - name: PLINK bed / pgen tests
+        run: |
+          python3 -m pip install --break-system-packages --quiet Pgenlib
+          make test-plink
+      - name: R reader test
+        run: |
+          sudo apt-get install -y --no-install-recommends r-base-core
+          make test-r

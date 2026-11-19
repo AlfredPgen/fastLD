@@ -1,0 +1,41 @@
+{
+ "cpu": "Intel(R) Xeon(R) Processor @ 2.10GHz",
+ "master": "/tmp/orig_D1.master",
+ "threads": 1,
+ "mode": "text",
+ "runs": 1,
+ "date": "2026-11-19 13:32:59",
+ "results": {
+  "original": {
+   "wall": {
+    "mean": 43.69484028400029,
+    "sd": 0.0
+   },
+   "parse": null,
+   "corr": null,
+   "write": null,
+   "rss_mb_max": 1066.80859375,
+   "path": null,
+   "raw": {
+    "wall": [
+     43.69484028400029
+    ],
+    "parse": [
+     null
+    ],
+    "corr": [
+     null
+    ],
+    "write": [
+     null
+    ],
+    "rss_mb": [
+     1066.80859375
+    ],
+    "path": null,
+    "cmd": "/work/ldstore --in-files /tmp/orig_D1.master --write-text --read-only-bgen --n-threads 1",
+    "env": {}
+   }
+  }
+ }
+}

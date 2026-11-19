@@ -1,0 +1,60 @@
+{
+ "cpu": "Intel(R) Xeon(R) Processor @ 2.10GHz",
+ "master": "/work/bd/D3h_pgen.master",
+ "threads": 1,
+ "mode": "text",
+ "runs": 3,
+ "date": "2026-11-19 13:31:04",
+ "results": {
+  "final": {
+   "wall": {
+    "mean": 2.6120398606666035,
+    "sd": 0.11943351630105442
+   },
+   "parse": {
+    "mean": 0.200753,
+    "sd": 0.01134533397481097
+   },
+   "corr": {
+    "mean": 1.750484,
+    "sd": 0.0823630822577689
+   },
+   "write": {
+    "mean": 0.6360836666666667,
+    "sd": 0.05166466907213612
+   },
+   "rss_mb_max": 116.67578125,
+   "path": "exact hard-call bit planes (AVX-512 VPOPCNTDQ), 4000 SNPs",
+   "raw": {
+    "wall": [
+     2.7459205340001063,
+     2.5737585329998183,
+     2.5164405149998856
+    ],
+    "parse": [
+     0.198155,
+     0.213172,
+     0.190932
+    ],
+    "corr": [
+     1.842897,
+     1.684821,
+     1.723734
+    ],
+    "write": [
+     0.67866,
+     0.650985,
+     0.578606
+    ],
+    "rss_mb": [
+     116.671875,
+     116.671875,
+     116.67578125
+    ],
+    "path": "exact hard-call bit planes (AVX-512 VPOPCNTDQ), 4000 SNPs",
+    "cmd": "/work/bin/ldstore-fast-static-final --in-files /work/bd/D3h_pgen.master --write-text --read-only-bgen --n-threads 1",
+    "env": {}
+   }
+  }
+ }
+}

@@ -1,0 +1,110 @@
+{
+ "cpu": "Intel(R) Xeon(R) Processor @ 2.10GHz",
+ "master": "/work/bd/D3h.master",
+ "threads": 4,
+ "mode": "text",
+ "runs": 3,
+ "date": "2026-11-19 13:30:42",
+ "results": {
+  "baseline": {
+   "wall": {
+    "mean": 3.1410378923333155,
+    "sd": 0.09253783106130681
+   },
+   "parse": {
+    "mean": 0.289377,
+    "sd": 0.04292329004165455
+   },
+   "corr": {
+    "mean": 2.51233,
+    "sd": 0.0969546529517796
+   },
+   "write": {
+    "mean": 0.312407,
+    "sd": 0.03842341197759514
+   },
+   "rss_mb_max": 510.8515625,
+   "path": "exact integer (AVX-512 VNNI)",
+   "raw": {
+    "wall": [
+     3.054700518000118,
+     3.129684625000209,
+     3.2387285339996197
+    ],
+    "parse": [
+     0.268623,
+     0.338733,
+     0.260775
+    ],
+    "corr": [
+     2.427815,
+     2.491002,
+     2.618173
+    ],
+    "write": [
+     0.333635,
+     0.268053,
+     0.335533
+    ],
+    "rss_mb": [
+     510.84765625,
+     510.78125,
+     510.8515625
+    ],
+    "path": "exact integer (AVX-512 VNNI)",
+    "cmd": "/work/bin/ldstore-fast-baseline --in-files /work/bd/D3h.master --write-text --read-only-bgen --n-threads 4",
+    "env": {}
+   }
+  },
+  "final": {
+   "wall": {
+    "mean": 1.0470263306668433,
+    "sd": 0.04624256551365995
+   },
+   "parse": {
+    "mean": 0.267874,
+    "sd": 0.02151495152213921
+   },
+   "corr": {
+    "mean": 0.431744,
+    "sd": 0.031030790209081047
+   },
+   "write": {
+    "mean": 0.31754899999999997,
+    "sd": 0.02318555367033532
+   },
+   "rss_mb_max": 124.89453125,
+   "path": "exact hard-call bit planes (AVX-512 VPOPCNTDQ), 4000 SNPs",
+   "raw": {
+    "wall": [
+     1.0300066880004124,
+     1.0117055269997763,
+     1.0993667770003412
+    ],
+    "parse": [
+     0.284656,
+     0.275347,
+     0.243619
+    ],
+    "corr": [
+     0.413708,
+     0.413949,
+     0.467575
+    ],
+    "write": [
+     0.309811,
+     0.299222,
+     0.343614
+    ],
+    "rss_mb": [
+     124.89453125,
+     124.73828125,
+     123.49609375
+    ],
+    "path": "exact hard-call bit planes (AVX-512 VPOPCNTDQ), 4000 SNPs",
+    "cmd": "/work/bin/ldstore-fast-static-final --in-files /work/bd/D3h.master --write-text --read-only-bgen --n-threads 4",
+    "env": {}
+   }
+  }
+ }
+}

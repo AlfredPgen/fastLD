@@ -1,0 +1,60 @@
+{
+ "cpu": "Intel(R) Xeon(R) Processor @ 2.10GHz",
+ "master": "/work/bd/D3m.master",
+ "threads": 1,
+ "mode": "text",
+ "runs": 3,
+ "date": "2026-11-19 11:18:34",
+ "results": {
+  "baseline": {
+   "wall": {
+    "mean": 14.391261790333298,
+    "sd": 0.24657823293579892
+   },
+   "parse": {
+    "mean": 0.583683,
+    "sd": 0.003958970446972281
+   },
+   "corr": {
+    "mean": 13.296212333333333,
+    "sd": 0.3436857619720855
+   },
+   "write": {
+    "mean": 0.48802066666666666,
+    "sd": 0.10099157876443625
+   },
+   "rss_mb_max": 647.84765625,
+   "path": "floating point (BLAS dsyrk)",
+   "raw": {
+    "wall": [
+     14.675682157999972,
+     14.260436499999969,
+     14.237666712999953
+    ],
+    "parse": [
+     0.586722,
+     0.579206,
+     0.585121
+    ],
+    "corr": [
+     13.690964,
+     13.134167,
+     13.063506
+    ],
+    "write": [
+     0.374462,
+     0.52183,
+     0.56777
+    ],
+    "rss_mb": [
+     647.84765625,
+     647.84765625,
+     647.84375
+    ],
+    "path": "floating point (BLAS dsyrk)",
+    "cmd": "/work/bin/ldstore-fast-baseline --in-files /work/bd/D3m.master --write-text --read-only-bgen --n-threads 1",
+    "env": {}
+   }
+  }
+ }
+}
